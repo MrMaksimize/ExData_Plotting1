@@ -1,5 +1,3 @@
-## Set WD to the location of file
-setwd(dirname(parent.frame(2)$ofile))
 
 getData <- function() {
   # Auto Install Packages

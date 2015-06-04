@@ -1,8 +1,10 @@
+## Set WD to the location of file
+setwd(dirname(parent.frame(2)$ofile))
+
 source('helpers.R')
 
 pcons <- getData()
 
-View(pcons)
 plot(
   pcons$Date, 
   pcons$Global_active_power, 
@@ -11,5 +13,5 @@ plot(
   ylab = "Global Active Power (kilowatts)"
 )
 
-#dev.copy(png, file="./plot2.png")
-#dev.off()
+dev.copy(png, file="./plot2.png")
+dev.off()
