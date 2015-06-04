@@ -33,10 +33,9 @@ getData <- function() {
   
   ## Do some Data Prep.
   ## Dates
-  pcons <- pcons %>%
-    mutate(Date = paste(Date, Time)) 
-    #mutate(Date = strptime(Date, format = "%e/%m/%Y %H:%M:%S"))
-    #select(-Time)
+  #pcons <- pcons %>%
+    #mutate(Date = paste(Date, Time)) %>%
+    #mutate(Date = as.Date(Date, format = "%e/%m/%Y %H:%M:%S"))
     
   pcons
 }
