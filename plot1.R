@@ -1,3 +1,6 @@
+## Set WD to the location of file
+setwd(dirname(parent.frame(2)$ofile))
+
 source('helpers.R')
 
 pcons <- getData()
